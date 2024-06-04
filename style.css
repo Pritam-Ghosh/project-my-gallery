@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.nav{
+    display: flex;
+    background-color: darkslategray;
+    min-height: 60px;
+    
+    
+}
+.nav-component{
+    margin: 20px;
+    color: white;
+}
+
+.grid-container {
+    margin: 30px;
+   
+    display: grid;
+    /* border: 2px solid black; */
+    gap: 10px;
+    grid-template-columns: repeat(6, 1fr);
+    /* hight */
+    grid-auto-rows: 130px;
+   
+    height: 100vh;
+    
+    
+}
+
+.item {
+    /* border: 2px solid red; */
+    padding: 12px;
+    color: white;
+    background-size: cover;
+    background-position: top;
+ 
+    border-radius: 8px;
+
+    /* image filter */
+    background-color: #222;
+    background-blend-mode: hard-light;
+}
+.item:hover{
+    background-color: #999;
+    /* -------------------
+    transition
+     */
+    
+    transition: all 1s ease-in-out;
+    background-position: center;
+}
+.row1{
+    grid-row: span 2;
+}
+
+.col1{
+    grid-column: span 2;
+}
+
+/* .row-1 {
+    grid-row: 1 / span 2;
+} */
